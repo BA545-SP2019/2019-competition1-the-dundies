@@ -41,7 +41,9 @@ Research Question: "What are the determinants of IPO underpricing phenomena?"
 
 ------Tenative Schedule for Deliverables------
 Today: Feb. 11th
-
+- Baseline Descriptive Statistics
+- Begin Imputations
+- Data Understanding
 
 
 Milestone Deadline: Feb. 19th 11:59pm
