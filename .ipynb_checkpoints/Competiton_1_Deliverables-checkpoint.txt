@@ -1,0 +1,51 @@
+Deliverables for Competition 1
+
+***Important Dates***
+
+Start Date: Monday Feb. 4th
+
+Milestone Checkpoint: Feb. 19th 11:59pm
+
+End Date: Monday March 4th 12:00am
+
+
+
+---Notes---
+Each submission contains: 1. Data file modified by the group
+                          2. Python workflow and/or any other code used by the group
+                          3. Detailed comments and description of the code used
+                          
+Measured on: Prediction Accuracy & Predictive Power (Each worth 100 points towards total 200 points for Comptetion)
+
+
+
+----Major Notes----
+
+Research Question: "What are the determinants of IPO underpricing phenomena?"
+    - The main purpose of this competition is to prepare the data for predictive models answering the research question
+
+  ##Steps that have been suggested for us to take##
+      - Descriptive Statistics: describe the data using the mean, mode, 1st|3rd quartiles, standard deviation, etc. ...
+      - Imputation: dealing with missing data (WE ARE NOT GOING TO DROP ANY COLUMNS DUE TO MISSING DATA)
+                   - We could:
+                       1. Fill in the missing data with the mean/median/mode, depending on the data type
+                       2. Use linear regression predictions in a continuous data type column
+      - Normalization: We will need to normalize all continuous variable fields to allow a normal distribution
+                       1. We will need to remove skewness (using logarithm, square root, etc.)
+                       2. Make sure the residual is randomly distributed
+      - Correlation Analysis: need to select predictor variables with low-pair wise correlation values (usually the threshold is 0.5)
+      - Standardization: need to convert the values at the same numeric level; can use the z-score standardization method
+      - Recoding: we should recode any categorical data (they are usually binary); but categorical data should not have more than 5 classes
+      
+
+
+------Tenative Schedule for Deliverables------
+Today: Feb. 11th
+
+
+
+Milestone Deadline: Feb. 19th 11:59pm
+
+
+
+Final Due Date: Mar. 4th 12:00am
