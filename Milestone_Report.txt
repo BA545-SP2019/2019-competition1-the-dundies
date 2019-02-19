@@ -1,0 +1,24 @@
+---- Milestone Report ----
+
+What have we done so far?
+
+Business Understanding
+    - We have identified what our research goal is and the business background that pertains to the competition
+    - We have identified the features that we have been given, and have a clear understanding of what their purpose is.
+
+Began our Data Understanding
+    - Did some basic functions (.describe() & .dtypes) to gain a better understanding of what data that we are dealing with.
+    - Began to look at the missing values, and ask questions to see if they were really missing values, which they are.
+        - We are able to impute some of them through external research, as the information was readily available.
+
+
+What are we currently doing as of this moment?
+    - We are working through the imputations of each column with missing data, and identifying the best possible way that we can approach imputing.
+        - One idea that we have as a group is that we can utilize the column, `I3`, as it is a range of codes that help identify what industry companies are in. We can bin these codes and gain statistical data to possibly impute data more accurately according to companies in each industry, instead of mixing financial company statistics with transportation statistics.
+        
+
+What is our plan for the remaining period before March 4th?
+    - We plan on finishing imputations by the end of this week, as well as identifying potential outliers that we may have in our data set.
+    - In the following week, we plan on beginning and finishing recoding the data, as well as starting on normalising the data.
+    - Following that, we will identify which data needs to be standardized.
+    - Finally, we will create a correlation analysis on all of the features of our dataset and use that to run a logistic regression model on our final dataset to see how accurately we can determine if a companies IPO will be underpriced or not.
