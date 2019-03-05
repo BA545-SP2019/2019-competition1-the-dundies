@@ -1595,6 +1595,19 @@
    ]
   },
   {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Fixing the skew for feature C4\n",
+    "normal_df_data['C4'] = np.cbrt(normal_df_data['C4'])\n",
+    "\n",
+    "# Displaying new skew values\n",
+    "normal_df_data.skew()"
+   ]
+  },
+  {
    "cell_type": "markdown",
    "metadata": {},
    "source": [
@@ -1609,13 +1622,13 @@
     {
      "data": {
       "text/plain": [
-       "{'whiskers': [<matplotlib.lines.Line2D at 0x7f6b28ef2f28>,\n",
-       "  <matplotlib.lines.Line2D at 0x7f6b28efb2b0>],\n",
-       " 'caps': [<matplotlib.lines.Line2D at 0x7f6b28efb5f8>,\n",
-       "  <matplotlib.lines.Line2D at 0x7f6b28efb940>],\n",
-       " 'boxes': [<matplotlib.lines.Line2D at 0x7f6b28ef2dd8>],\n",
-       " 'medians': [<matplotlib.lines.Line2D at 0x7f6b28efbc88>],\n",
-       " 'fliers': [<matplotlib.lines.Line2D at 0x7f6b28efbfd0>],\n",
+       "{'whiskers': [<matplotlib.lines.Line2D at 0x7f832b106e10>,\n",
+       "  <matplotlib.lines.Line2D at 0x7f832b110198>],\n",
+       " 'caps': [<matplotlib.lines.Line2D at 0x7f832b1104e0>,\n",
+       "  <matplotlib.lines.Line2D at 0x7f832b110828>],\n",
+       " 'boxes': [<matplotlib.lines.Line2D at 0x7f832b106cc0>],\n",
+       " 'medians': [<matplotlib.lines.Line2D at 0x7f832b110b70>],\n",
+       " 'fliers': [<matplotlib.lines.Line2D at 0x7f832b110eb8>],\n",
        " 'means': []}"
       ]
      },
@@ -1661,13 +1674,13 @@
     {
      "data": {
       "text/plain": [
-       "{'whiskers': [<matplotlib.lines.Line2D at 0x7f6b28ece588>,\n",
-       "  <matplotlib.lines.Line2D at 0x7f6b28ece8d0>],\n",
-       " 'caps': [<matplotlib.lines.Line2D at 0x7f6b28ecec18>,\n",
-       "  <matplotlib.lines.Line2D at 0x7f6b28ecef60>],\n",
-       " 'boxes': [<matplotlib.lines.Line2D at 0x7f6b28ece438>],\n",
-       " 'medians': [<matplotlib.lines.Line2D at 0x7f6b28e592e8>],\n",
-       " 'fliers': [<matplotlib.lines.Line2D at 0x7f6b28e59630>],\n",
+       "{'whiskers': [<matplotlib.lines.Line2D at 0x7f832b0e64a8>,\n",
+       "  <matplotlib.lines.Line2D at 0x7f832b0e67f0>],\n",
+       " 'caps': [<matplotlib.lines.Line2D at 0x7f832b0e6b38>,\n",
+       "  <matplotlib.lines.Line2D at 0x7f832b0e6e80>],\n",
+       " 'boxes': [<matplotlib.lines.Line2D at 0x7f832b0e6358>],\n",
+       " 'medians': [<matplotlib.lines.Line2D at 0x7f832b06f208>],\n",
+       " 'fliers': [<matplotlib.lines.Line2D at 0x7f832b06f550>],\n",
        " 'means': []}"
       ]
      },
@@ -1704,13 +1717,13 @@
     {
      "data": {
       "text/plain": [
-       "{'whiskers': [<matplotlib.lines.Line2D at 0x7f6b28e29748>,\n",
-       "  <matplotlib.lines.Line2D at 0x7f6b28e29a90>],\n",
-       " 'caps': [<matplotlib.lines.Line2D at 0x7f6b28e29dd8>,\n",
-       "  <matplotlib.lines.Line2D at 0x7f6b28e33160>],\n",
-       " 'boxes': [<matplotlib.lines.Line2D at 0x7f6b28e295f8>],\n",
-       " 'medians': [<matplotlib.lines.Line2D at 0x7f6b28e334a8>],\n",
-       " 'fliers': [<matplotlib.lines.Line2D at 0x7f6b28e337f0>],\n",
+       "{'whiskers': [<matplotlib.lines.Line2D at 0x7f832b040668>,\n",
+       "  <matplotlib.lines.Line2D at 0x7f832b0409b0>],\n",
+       " 'caps': [<matplotlib.lines.Line2D at 0x7f832b040cf8>,\n",
+       "  <matplotlib.lines.Line2D at 0x7f832b048080>],\n",
+       " 'boxes': [<matplotlib.lines.Line2D at 0x7f832b040518>],\n",
+       " 'medians': [<matplotlib.lines.Line2D at 0x7f832b0483c8>],\n",
+       " 'fliers': [<matplotlib.lines.Line2D at 0x7f832b048710>],\n",
        " 'means': []}"
       ]
      },
@@ -1747,13 +1760,13 @@
     {
      "data": {
       "text/plain": [
-       "{'whiskers': [<matplotlib.lines.Line2D at 0x7f6b28e03f98>,\n",
-       "  <matplotlib.lines.Line2D at 0x7f6b28e0e320>],\n",
-       " 'caps': [<matplotlib.lines.Line2D at 0x7f6b28e0e668>,\n",
-       "  <matplotlib.lines.Line2D at 0x7f6b28e0e9b0>],\n",
-       " 'boxes': [<matplotlib.lines.Line2D at 0x7f6b28e03e48>],\n",
-       " 'medians': [<matplotlib.lines.Line2D at 0x7f6b28e0ecf8>],\n",
-       " 'fliers': [<matplotlib.lines.Line2D at 0x7f6b28d9a080>],\n",
+       "{'whiskers': [<matplotlib.lines.Line2D at 0x7f832b019eb8>,\n",
+       "  <matplotlib.lines.Line2D at 0x7f832b023240>],\n",
+       " 'caps': [<matplotlib.lines.Line2D at 0x7f832b023588>,\n",
+       "  <matplotlib.lines.Line2D at 0x7f832b0238d0>],\n",
+       " 'boxes': [<matplotlib.lines.Line2D at 0x7f832b019d68>],\n",
+       " 'medians': [<matplotlib.lines.Line2D at 0x7f832b023c18>],\n",
+       " 'fliers': [<matplotlib.lines.Line2D at 0x7f832b023f60>],\n",
        " 'means': []}"
       ]
      },
@@ -1790,13 +1803,13 @@
     {
      "data": {
       "text/plain": [
-       "{'whiskers': [<matplotlib.lines.Line2D at 0x7f6b2b047ef0>,\n",
-       "  <matplotlib.lines.Line2D at 0x7f6b2b048470>],\n",
-       " 'caps': [<matplotlib.lines.Line2D at 0x7f6b2b048748>,\n",
-       "  <matplotlib.lines.Line2D at 0x7f6b2b048ba8>],\n",
-       " 'boxes': [<matplotlib.lines.Line2D at 0x7f6b2b047e80>],\n",
-       " 'medians': [<matplotlib.lines.Line2D at 0x7f6b2b048e80>],\n",
-       " 'fliers': [<matplotlib.lines.Line2D at 0x7f6b2b04a278>],\n",
+       "{'whiskers': [<matplotlib.lines.Line2D at 0x7f832d25df28>,\n",
+       "  <matplotlib.lines.Line2D at 0x7f832d25e400>],\n",
+       " 'caps': [<matplotlib.lines.Line2D at 0x7f832d25e828>,\n",
+       "  <matplotlib.lines.Line2D at 0x7f832d25eb38>],\n",
+       " 'boxes': [<matplotlib.lines.Line2D at 0x7f832d25def0>],\n",
+       " 'medians': [<matplotlib.lines.Line2D at 0x7f832d25ef60>],\n",
+       " 'fliers': [<matplotlib.lines.Line2D at 0x7f832d2602e8>],\n",
        " 'means': []}"
       ]
      },
@@ -1833,13 +1846,13 @@
     {
      "data": {
       "text/plain": [
-       "{'whiskers': [<matplotlib.lines.Line2D at 0x7f6b2b105198>,\n",
-       "  <matplotlib.lines.Line2D at 0x7f6b2b1054e0>],\n",
-       " 'caps': [<matplotlib.lines.Line2D at 0x7f6b2b105828>,\n",
-       "  <matplotlib.lines.Line2D at 0x7f6b2b105b70>],\n",
-       " 'boxes': [<matplotlib.lines.Line2D at 0x7f6b2b105048>],\n",
-       " 'medians': [<matplotlib.lines.Line2D at 0x7f6b2b105eb8>],\n",
-       " 'fliers': [<matplotlib.lines.Line2D at 0x7f6b2b113240>],\n",
+       "{'whiskers': [<matplotlib.lines.Line2D at 0x7f832d3022e8>,\n",
+       "  <matplotlib.lines.Line2D at 0x7f832d302630>],\n",
+       " 'caps': [<matplotlib.lines.Line2D at 0x7f832d302978>,\n",
+       "  <matplotlib.lines.Line2D at 0x7f832d302cc0>],\n",
+       " 'boxes': [<matplotlib.lines.Line2D at 0x7f832d302198>],\n",
+       " 'medians': [<matplotlib.lines.Line2D at 0x7f832d329048>],\n",
+       " 'fliers': [<matplotlib.lines.Line2D at 0x7f832d329390>],\n",
        " 'means': []}"
       ]
      },
@@ -1876,13 +1889,13 @@
     {
      "data": {
       "text/plain": [
-       "{'whiskers': [<matplotlib.lines.Line2D at 0x7f6b28d84e48>,\n",
-       "  <matplotlib.lines.Line2D at 0x7f6b28d8f1d0>],\n",
-       " 'caps': [<matplotlib.lines.Line2D at 0x7f6b28d8f518>,\n",
-       "  <matplotlib.lines.Line2D at 0x7f6b28d8f860>],\n",
-       " 'boxes': [<matplotlib.lines.Line2D at 0x7f6b28d84cf8>],\n",
-       " 'medians': [<matplotlib.lines.Line2D at 0x7f6b28d8fba8>],\n",
-       " 'fliers': [<matplotlib.lines.Line2D at 0x7f6b28d8fef0>],\n",
+       "{'whiskers': [<matplotlib.lines.Line2D at 0x7f832af9cf98>,\n",
+       "  <matplotlib.lines.Line2D at 0x7f832afa7320>],\n",
+       " 'caps': [<matplotlib.lines.Line2D at 0x7f832afa7668>,\n",
+       "  <matplotlib.lines.Line2D at 0x7f832afa79b0>],\n",
+       " 'boxes': [<matplotlib.lines.Line2D at 0x7f832af9ce48>],\n",
+       " 'medians': [<matplotlib.lines.Line2D at 0x7f832afa7cf8>],\n",
+       " 'fliers': [<matplotlib.lines.Line2D at 0x7f832af2f080>],\n",
        " 'means': []}"
       ]
      },
@@ -1919,13 +1932,13 @@
     {
      "data": {
       "text/plain": [
-       "{'whiskers': [<matplotlib.lines.Line2D at 0x7f6b28d576a0>,\n",
-       "  <matplotlib.lines.Line2D at 0x7f6b28d579e8>],\n",
-       " 'caps': [<matplotlib.lines.Line2D at 0x7f6b28d57d30>,\n",
-       "  <matplotlib.lines.Line2D at 0x7f6b28ce20b8>],\n",
-       " 'boxes': [<matplotlib.lines.Line2D at 0x7f6b28d57550>],\n",
-       " 'medians': [<matplotlib.lines.Line2D at 0x7f6b28ce2400>],\n",
-       " 'fliers': [<matplotlib.lines.Line2D at 0x7f6b28ce2748>],\n",
+       "{'whiskers': [<matplotlib.lines.Line2D at 0x7f832aeee7f0>,\n",
+       "  <matplotlib.lines.Line2D at 0x7f832aeeeb38>],\n",
+       " 'caps': [<matplotlib.lines.Line2D at 0x7f832aeeee80>,\n",
+       "  <matplotlib.lines.Line2D at 0x7f832aefa208>],\n",
+       " 'boxes': [<matplotlib.lines.Line2D at 0x7f832aeee6a0>],\n",
+       " 'medians': [<matplotlib.lines.Line2D at 0x7f832aefa550>],\n",
+       " 'fliers': [<matplotlib.lines.Line2D at 0x7f832aefa898>],\n",
        " 'means': []}"
       ]
      },
@@ -1962,13 +1975,13 @@
     {
      "data": {
       "text/plain": [
-       "{'whiskers': [<matplotlib.lines.Line2D at 0x7f6b28ca2eb8>,\n",
-       "  <matplotlib.lines.Line2D at 0x7f6b28caf240>],\n",
-       " 'caps': [<matplotlib.lines.Line2D at 0x7f6b28caf588>,\n",
-       "  <matplotlib.lines.Line2D at 0x7f6b28caf8d0>],\n",
-       " 'boxes': [<matplotlib.lines.Line2D at 0x7f6b28ca2d68>],\n",
-       " 'medians': [<matplotlib.lines.Line2D at 0x7f6b28cafc18>],\n",
-       " 'fliers': [<matplotlib.lines.Line2D at 0x7f6b28caff60>],\n",
+       "{'whiskers': [<matplotlib.lines.Line2D at 0x7f832aec4048>,\n",
+       "  <matplotlib.lines.Line2D at 0x7f832aec4390>],\n",
+       " 'caps': [<matplotlib.lines.Line2D at 0x7f832aec46d8>,\n",
+       "  <matplotlib.lines.Line2D at 0x7f832aec4a20>],\n",
+       " 'boxes': [<matplotlib.lines.Line2D at 0x7f832aebaeb8>],\n",
+       " 'medians': [<matplotlib.lines.Line2D at 0x7f832aec4d68>],\n",
+       " 'fliers': [<matplotlib.lines.Line2D at 0x7f832aecd0f0>],\n",
        " 'means': []}"
       ]
      },
@@ -2005,13 +2018,13 @@
     {
      "data": {
       "text/plain": [
-       "{'whiskers': [<matplotlib.lines.Line2D at 0x7f6b28c80518>,\n",
-       "  <matplotlib.lines.Line2D at 0x7f6b28c80860>],\n",
-       " 'caps': [<matplotlib.lines.Line2D at 0x7f6b28c80ba8>,\n",
-       "  <matplotlib.lines.Line2D at 0x7f6b28c80ef0>],\n",
-       " 'boxes': [<matplotlib.lines.Line2D at 0x7f6b28c803c8>],\n",
-       " 'medians': [<matplotlib.lines.Line2D at 0x7f6b28c88278>],\n",
-       " 'fliers': [<matplotlib.lines.Line2D at 0x7f6b28c885c0>],\n",
+       "{'whiskers': [<matplotlib.lines.Line2D at 0x7f832ae95668>,\n",
+       "  <matplotlib.lines.Line2D at 0x7f832ae959b0>],\n",
+       " 'caps': [<matplotlib.lines.Line2D at 0x7f832ae95cf8>,\n",
+       "  <matplotlib.lines.Line2D at 0x7f832ae9e080>],\n",
+       " 'boxes': [<matplotlib.lines.Line2D at 0x7f832ae95518>],\n",
+       " 'medians': [<matplotlib.lines.Line2D at 0x7f832ae9e3c8>],\n",
+       " 'fliers': [<matplotlib.lines.Line2D at 0x7f832ae9e710>],\n",
        " 'means': []}"
       ]
      },
@@ -2287,43 +2300,6 @@
    "metadata": {},
    "source": [
     "The values that have `nan` for skewness"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": 39,
-   "metadata": {},
-   "outputs": [
-    {
-     "data": {
-      "text/plain": [
-       "C1     0.484764\n",
-       "C2    -2.123926\n",
-       "C3'   -0.485756\n",
-       "C4    -0.053332\n",
-       "C5'   -0.117764\n",
-       "C6'    0.460965\n",
-       "C7     0.831200\n",
-       "T3'    0.538173\n",
-       "T4'    0.461989\n",
-       "T5'    0.538173\n",
-       "S1'    0.538173\n",
-       "S2'    0.404272\n",
-       "S3'    0.229025\n",
-       "dtype: float64"
-      ]
-     },
-     "execution_count": 39,
-     "metadata": {},
-     "output_type": "execute_result"
-    }
-   ],
-   "source": [
-    "# Fixing the skew for feature C4\n",
-    "normal_df_data['C4'] = np.cbrt(normal_df_data['C4'])\n",
-    "\n",
-    "# Displaying new skew values\n",
-    "normal_df_data.skew()"
    ]
   },
   {
@@ -4542,7 +4518,7 @@
     {
      "data": {
       "text/plain": [
-       "<matplotlib.axes._subplots.AxesSubplot at 0x7f6b28717668>"
+       "<matplotlib.axes._subplots.AxesSubplot at 0x7f832a91cf28>"
       ]
      },
      "execution_count": 64,
